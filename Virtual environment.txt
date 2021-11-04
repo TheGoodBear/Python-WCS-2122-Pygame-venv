@@ -1,0 +1,44 @@
+Installing virtual environment :
+
+1 - After installing last Python (https://www.python.org/downloads/)
+
+2 - Open terminal (Menu : Terminal / Nouveau Terminal)
+
+3 - Install virtual environment
+    python -m venv env
+    
+    then choose as interpreter
+    in terminal, be sure to activate by executing:
+    env/scripts/activate
+    
+    NOTE : if we don't have rights to do this, we have to execute :
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    in PowerShell
+
+4 - Install packages with pip
+Note : prefer "py -m pip install" vs "pip install"
+    Django (https://code.visualstudio.com/docs/python/tutorial-django) - Web apps
+        → python -m pip install django
+    PyGame (https://www.pygame.org/news) - Graphic games
+        → pip install pygame
+    Psycopg2 (https://www.pygame.org/news) - PostgreSQL driver
+        → pip install psycopg2
+    Pillow (https://pillow.readthedocs.io/en/latest/) - Image management
+        → pip install --upgrade Pillow
+    Requests (https://requests.readthedocs.io/en/master/) - HTTP requests
+        → pip install requests
+    AIOHTTP (https://docs.aiohttp.org/en/stable/) - Asynchronous HTTP client/server
+        → pip install aiohttp
+    lxml (https://lxml.de/installation.html) - XML management
+        → pip install lxml
+
+
+venv and requirements.txt :
+(see https://note.nkmk.me/en/python-pip-install-requirements/) 
+1 - Create requirements.txt from venv :
+    pip freeze > requirements.txt
+2 - Install from requirements.txt :
+    pip install -r requirements.txt
+
+Update Python version in venv :
+
